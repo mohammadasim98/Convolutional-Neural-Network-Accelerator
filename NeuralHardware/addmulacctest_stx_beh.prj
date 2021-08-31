@@ -1,0 +1,3 @@
+verilog isim_temp "addmulacc.v"
+verilog isim_temp "addmulacctest.v"
+verilog isim_temp "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

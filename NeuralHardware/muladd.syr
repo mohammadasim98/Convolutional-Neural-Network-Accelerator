@@ -1,0 +1,371 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: muladd.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "muladd.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "muladd"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg400
+
+---- Source Options
+Top Module Name                    : muladd
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\muladd.v" into library work
+Parsing module <muladd>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <muladd>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <muladd>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\muladd.v".
+    Found 16-bit register for signal <out_pix>.
+    Found 16-bit adder for signal <n0061> created at line 47.
+    Found 16-bit adder for signal <n0064> created at line 47.
+    Found 16-bit adder for signal <n0067> created at line 47.
+    Found 16-bit adder for signal <n0070> created at line 47.
+    Found 16-bit adder for signal <n0073> created at line 47.
+    Found 16-bit adder for signal <n0076> created at line 47.
+    Found 16-bit adder for signal <n0079> created at line 47.
+    Found 16-bit adder for signal <kernel_weights0[7]_kernel_weights8[7]_add_17_OUT> created at line 47.
+    Found 8x8-bit multiplier for signal <n0058> created at line 47.
+    Found 8x8-bit multiplier for signal <n0059> created at line 47.
+    Found 8x8-bit multiplier for signal <n0062> created at line 47.
+    Found 8x8-bit multiplier for signal <n0065> created at line 47.
+    Found 8x8-bit multiplier for signal <n0068> created at line 47.
+    Found 8x8-bit multiplier for signal <n0071> created at line 47.
+    Found 8x8-bit multiplier for signal <n0074> created at line 47.
+    Found 8x8-bit multiplier for signal <n0077> created at line 47.
+    Found 8x8-bit multiplier for signal <n0080> created at line 47.
+    Summary:
+	inferred   9 Multiplier(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <muladd> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 9
+ 8x8-bit multiplier                                    : 9
+# Adders/Subtractors                                   : 8
+ 16-bit adder                                          : 8
+# Registers                                            : 1
+ 16-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <muladd>.
+	The following adders/subtractors are grouped into adder tree <Madd_kernel_weights0[7]_kernel_weights8[7]_add_17_OUT1> :
+ 	<Madd_n0061> in block <muladd>, 	<Madd_n0064> in block <muladd>, 	<Madd_n0067> in block <muladd>, 	<Madd_n0070> in block <muladd>, 	<Madd_n0073> in block <muladd>, 	<Madd_n0076> in block <muladd>, 	<Madd_n0079> in block <muladd>, 	<Madd_kernel_weights0[7]_kernel_weights8[7]_add_17_OUT> in block <muladd>.
+	Multiplier <Mmult_n0080> in block <muladd> and adder/subtractor <ADDER_FOR_MULTADD_Madd7> in block <muladd> are combined into a MAC<Maddsub_n0080>.
+	The following registers are also absorbed by the MAC: <out_pix> in block <muladd>.
+	Multiplier <Mmult_n0077> in block <muladd> and adder/subtractor <ADDER_FOR_MULTADD_Madd6> in block <muladd> are combined into a MAC<Maddsub_n0077>.
+	Multiplier <Mmult_n0074> in block <muladd> and adder/subtractor <ADDER_FOR_MULTADD_Madd5> in block <muladd> are combined into a MAC<Maddsub_n0074>.
+	Multiplier <Mmult_n0071> in block <muladd> and adder/subtractor <ADDER_FOR_MULTADD_Madd4> in block <muladd> are combined into a MAC<Maddsub_n0071>.
+	Multiplier <Mmult_n0068> in block <muladd> and adder/subtractor <ADDER_FOR_MULTADD_Madd3> in block <muladd> are combined into a MAC<Maddsub_n0068>.
+	Multiplier <Mmult_n0065> in block <muladd> and adder/subtractor <ADDER_FOR_MULTADD_Madd2> in block <muladd> are combined into a MAC<Maddsub_n0065>.
+	Multiplier <Mmult_n0062> in block <muladd> and adder/subtractor <ADDER_FOR_MULTADD_Madd1> in block <muladd> are combined into a MAC<Maddsub_n0062>.
+	Multiplier <Mmult_n0058> in block <muladd> and adder/subtractor <ADDER_FOR_MULTADD_Madd> in block <muladd> are combined into a MAC<Maddsub_n0058>.
+Unit <muladd> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 8
+ 8x8-to-16-bit MAC                                     : 8
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <muladd> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block muladd, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : muladd.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 162
+#      IBUF                        : 146
+#      OBUF                        : 16
+# DSPs                             : 9
+#      DSP48E1                     : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg400-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         164
+ Number of bonded IOBs:                 163  out of    125   130% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    104     0%  
+ Number of DSP48E1s:                      9  out of    220     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 13.138ns
+   Maximum output required time after clock: 0.608ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1237490102246205 / 93
+-------------------------------------------------------------------------
+Offset:              13.138ns (Levels of Logic = 9)
+  Source:            subimage1<7> (PAD)
+  Destination:       Maddsub_n0080 (DSP)
+  Destination Clock: clk rising
+
+  Data Path: subimage1<7> to Maddsub_n0080
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.000   0.358  subimage1_7_IBUF (subimage1_7_IBUF)
+     DSP48E1:A7->PCOUT47    1   2.970   0.000  Mmult_n0059 (Mmult_n0059_PCOUT_to_Maddsub_n0058_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Maddsub_n0058 (Maddsub_n0058_PCOUT_to_Maddsub_n0062_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Maddsub_n0062 (Maddsub_n0062_PCOUT_to_Maddsub_n0065_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Maddsub_n0065 (Maddsub_n0065_PCOUT_to_Maddsub_n0068_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Maddsub_n0068 (Maddsub_n0068_PCOUT_to_Maddsub_n0071_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Maddsub_n0071 (Maddsub_n0071_PCOUT_to_Maddsub_n0074_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Maddsub_n0074 (Maddsub_n0074_PCOUT_to_Maddsub_n0077_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Maddsub_n0077 (Maddsub_n0077_PCOUT_to_Maddsub_n0080_PCIN_47)
+     DSP48E1:PCIN47            1.025          Maddsub_n0080
+    ----------------------------------------
+    Total                     13.138ns (12.780ns logic, 0.358ns route)
+                                       (97.3% logic, 2.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.608ns (Levels of Logic = 1)
+  Source:            Maddsub_n0080 (DSP)
+  Destination:       out_pix<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Maddsub_n0080 to out_pix<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E1:CLK->P15      1   0.329   0.279  Maddsub_n0080 (out_pix_15_OBUF)
+     OBUF:I->O                 0.000          out_pix_15_OBUF (out_pix<15>)
+    ----------------------------------------
+    Total                      0.608ns (0.329ns logic, 0.279ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.86 secs
+ 
+--> 
+
+Total memory usage is 4702568 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

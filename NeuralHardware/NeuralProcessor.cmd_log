@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.syr" 

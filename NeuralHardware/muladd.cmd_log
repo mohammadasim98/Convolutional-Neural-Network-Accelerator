@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7z020-clg400-3 muladd.ngc muladd.ngd  
+map -intstyle ise -p xc7z020-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o muladd_map.ncd muladd.ngd muladd.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.xst" -ofn "D:/Xilinx/NeuralHardware/NeuralHardware/muladd.syr" 

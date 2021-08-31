@@ -1,0 +1,65 @@
+ISim log file
+Running: D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessorTestBench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessorTestBench_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.v" Line 26.  For instance uut/GlobMemPool1/, width 16 of formal port dinb is not equal to width 1 of actual signal dinB.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module NeuralProcessorTestBench.uut.GlobMemPool1.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.v" Line 29.  For instance uut/GlobMemPool1/, width 16 of formal port dinb is not equal to width 1 of actual signal dinB.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module NeuralProcessorTestBench.uut.GlobMemPool1.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module NeuralProcessorTestBench.uut.GlobMemPool1.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+Stopped at time : 80 us : File "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessorTestBench.v" Line 43
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessor.v" Line 29.  For instance uut/GlobMemPool1/, width 16 of formal port dinb is not equal to width 1 of actual signal dinB.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module NeuralProcessorTestBench.uut.GlobMemPool1.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module NeuralProcessorTestBench.uut.GlobMemPool1.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+Stopped at time : 80 us : File "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessorTestBench.v" Line 43
+# restart
+# run all
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module NeuralProcessorTestBench.uut.GlobMemPool1.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+Stopped at time : 80 us : File "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessorTestBench.v" Line 43
+# restart
+# restart
+# run all
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module NeuralProcessorTestBench.uut.GlobMemPool1.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+Stopped at time : 80 us : File "D:/Xilinx/NeuralHardware/NeuralHardware/NeuralProcessorTestBench.v" Line 43

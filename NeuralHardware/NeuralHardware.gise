@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="NeuralHardware.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Conv2D.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Conv2D.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Conv2D.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Conv2D.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Conv2D.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Conv2D.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Conv2D.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Conv2D.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Conv2D_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Conv2D_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Conv2D_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Conv2D_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Conv2test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Conv2test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Conv2test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Conv2test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Convolution2D.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Convolution2D.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Convolution2D.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Convolution2D.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Convolution2D.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Convolution2D.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Convolution2D.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Convolution2D.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Convolution2D_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Convolution2D_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Convolution2D_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Convolution2D_summary.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Convolution2D_testbench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Convolution2D_testbench_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Convolution2D_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="NeuralProcessor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="NeuralProcessor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="NeuralProcessor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="NeuralProcessor.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="NeuralProcessor.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="NeuralProcessor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="NeuralProcessor.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="NeuralProcessor.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="NeuralProcessorTestBench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="NeuralProcessorTestBench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="NeuralProcessorTestBench_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="NeuralProcessorTestBench_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="NeuralProcessor_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="NeuralProcessor_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="NeuralProcessor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="addmulacc_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addmulacc_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="addmulacctest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addmulacctest_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="calculator_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="conv2DTestBench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="conv2DTestBench_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ctrl_conv2D_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ctrl_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="fixdp_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fixdp_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="muladd.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="muladd.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="muladd.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="muladd.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="muladd.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="muladd.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muladd.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="muladd.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="muladd.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="muladd.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="muladd_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="muladd_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="muladd_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="muladd_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muladd_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="muladd_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="muladd_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="muladdmem.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="muladdmem.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="muladdmem.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="muladdmem.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="muladdmem.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="muladdmem.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="muladdmem.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="muladdmem.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="muladdmem.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="muladdmem.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muladdmem.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="muladdmem.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="muladdmem.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="muladdmem.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="muladdmem.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="muladdmem.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="muladdmem.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="muladdmem.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="muladdmem.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="muladdmem_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="muladdmem_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="muladdmem_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="muladdmem_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="muladdmem_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="muladdmem_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="muladdmem_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="muladdmem_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="muladdmem_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="muladdmem_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="muladdmem_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="muladdmem_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muladdmem_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="muladdmem_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="muladdmem_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="muladdmem_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="muladdmem_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muladdmemtest_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="muladdmemtest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="muladdmemtest_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muladdmemtest_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="muladdtest_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muladdtest_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/singleConv2D_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/singleConv2D_synthesis.v"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pixelpointprocessor_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pixelpointprocessor_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pixelpointprocessor_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="singleConv2D.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="singleConv2D.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="singleConv2D.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="singleConv2D.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="singleConv2D.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="singleConv2D.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="singleConv2D.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="singleConv2D.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="singleConv2D.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="singleConv2D.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="singleConv2D.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="singleConv2D.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="singleConv2D.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="singleConv2D.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="singleConv2D.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="singleConv2D.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="singleConv2D.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="singleConv2D.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="singleConv2D.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="singleConv2D_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="singleConv2D_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="singleConv2D_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="singleConv2D_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="singleConv2D_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="singleConv2D_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="singleConv2D_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="singleConv2D_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="singleConv2D_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="singleConv2D_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="singleConv2D_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="singleConv2D_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="singleConv2D_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="singleConv2D_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="singleConv2D_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="singleConv2Dtest_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="singleConv2Dtest_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testbenchpixeppoint_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testbenchpixeppoint_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1611163558" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1611163558">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173539" xil_pn:in_ck="1171040075634133558" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611173539">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Conv2D.v"/>
+      <outfile xil_pn:name="Convolution2D.v"/>
+      <outfile xil_pn:name="Convolution2D_testbench.v"/>
+      <outfile xil_pn:name="NeuralProcessor.v"/>
+      <outfile xil_pn:name="NeuralProcessorTestBench.v"/>
+      <outfile xil_pn:name="addmulacc.v"/>
+      <outfile xil_pn:name="calculator.v"/>
+      <outfile xil_pn:name="control.v"/>
+      <outfile xil_pn:name="conv2DControl.v"/>
+      <outfile xil_pn:name="conv2DTestBench.v"/>
+      <outfile xil_pn:name="ctrl.v"/>
+      <outfile xil_pn:name="ctrl_conv2D.v"/>
+      <outfile xil_pn:name="mula.v"/>
+      <outfile xil_pn:name="pixelpointprocessor.v"/>
+      <outfile xil_pn:name="pixelpointprocessor_testbench.v"/>
+      <outfile xil_pn:name="singleConv2D.v"/>
+      <outfile xil_pn:name="singleConv2Dtest.v"/>
+      <outfile xil_pn:name="testbenchpixeppoint.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173274" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5531409820846346750" xil_pn:start_ts="1611173274">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173274" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6119921238599736062" xil_pn:start_ts="1611173274">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173274" xil_pn:in_ck="1664425233995697554" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5929707642221076399" xil_pn:start_ts="1611173274">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/GlobalMemoryPool.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/GlobalMemoryPool.v"/>
+      <outfile xil_pn:name="ipcore_dir/dataMem.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/dataMem.v"/>
+      <outfile xil_pn:name="ipcore_dir/kernelMem.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/kernelMem.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173274" xil_pn:in_ck="7664118610306750381" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611173274">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Conv2D.v"/>
+      <outfile xil_pn:name="Convolution2D.v"/>
+      <outfile xil_pn:name="Convolution2D_testbench.v"/>
+      <outfile xil_pn:name="NeuralProcessor.v"/>
+      <outfile xil_pn:name="NeuralProcessorTestBench.v"/>
+      <outfile xil_pn:name="addmulacc.v"/>
+      <outfile xil_pn:name="calculator.v"/>
+      <outfile xil_pn:name="control.v"/>
+      <outfile xil_pn:name="conv2DControl.v"/>
+      <outfile xil_pn:name="conv2DTestBench.v"/>
+      <outfile xil_pn:name="ctrl.v"/>
+      <outfile xil_pn:name="ctrl_conv2D.v"/>
+      <outfile xil_pn:name="ipcore_dir/GlobalMemoryPool.v"/>
+      <outfile xil_pn:name="mula.v"/>
+      <outfile xil_pn:name="pixelpointprocessor.v"/>
+      <outfile xil_pn:name="pixelpointprocessor_testbench.v"/>
+      <outfile xil_pn:name="singleConv2D.v"/>
+      <outfile xil_pn:name="singleConv2Dtest.v"/>
+      <outfile xil_pn:name="testbenchpixeppoint.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173278" xil_pn:in_ck="4585863956174363500" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6182196232234540574" xil_pn:start_ts="1611173274">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="NeuralProcessorTestBench_beh.prj"/>
+      <outfile xil_pn:name="NeuralProcessorTestBench_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173278" xil_pn:in_ck="7462982079388780263" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8533868485653252737" xil_pn:start_ts="1611173278">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="NeuralProcessorTestBench_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173066" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1611173066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173066" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1473285175464251518" xil_pn:start_ts="1611173066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173066" xil_pn:in_ck="1664425233995697554" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5929707642221076399" xil_pn:start_ts="1611173066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/GlobalMemoryPool.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/GlobalMemoryPool.v"/>
+      <outfile xil_pn:name="ipcore_dir/dataMem.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/dataMem.v"/>
+      <outfile xil_pn:name="ipcore_dir/kernelMem.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/kernelMem.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173066" xil_pn:in_ck="-4937287044116402497" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1611173066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173066" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8511886249966028162" xil_pn:start_ts="1611173066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173066" xil_pn:in_ck="-4937287044116402497" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8962985228163541850" xil_pn:start_ts="1611173066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173066" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="7305995273551734747" xil_pn:start_ts="1611173066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611173176" xil_pn:in_ck="4176897947228976099" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-4622419628046409343" xil_pn:start_ts="1611173166">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="Convolution2D.ngr"/>
+      <outfile xil_pn:name="NeuralProcessor.lso"/>
+      <outfile xil_pn:name="NeuralProcessor.ngc"/>
+      <outfile xil_pn:name="NeuralProcessor.ngr"/>
+      <outfile xil_pn:name="NeuralProcessor.prj"/>
+      <outfile xil_pn:name="NeuralProcessor.stx"/>
+      <outfile xil_pn:name="NeuralProcessor.syr"/>
+      <outfile xil_pn:name="NeuralProcessor.xst"/>
+      <outfile xil_pn:name="NeuralProcessor_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1611046212" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7131853882677313584" xil_pn:start_ts="1611046212">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+  </transforms>
+
+</generated_project>

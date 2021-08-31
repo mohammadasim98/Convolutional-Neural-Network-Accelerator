@@ -1,0 +1,8 @@
+verilog isim_temp "ipcore_dir/GlobalMemoryPool.v"
+verilog isim_temp "ctrl.v"
+verilog isim_temp "calculator.v"
+verilog isim_temp "pixelpointprocessor.v"
+verilog isim_temp "ctrl_conv2D.v"
+verilog isim_temp "Convolution2D.v"
+verilog isim_temp "Convolution2D_testbench.v"
+verilog isim_temp "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

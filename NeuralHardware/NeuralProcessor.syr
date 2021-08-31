@@ -1,0 +1,689 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: NeuralProcessor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NeuralProcessor.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NeuralProcessor"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg400
+
+---- Source Options
+Top Module Name                    : NeuralProcessor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" into library work
+Parsing module <ctrl>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v" into library work
+Parsing module <calculator>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\pixelpointprocessor.v" into library work
+Parsing module <pixelpointprocessor>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" into library work
+Parsing module <ctrl_conv2D>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\ipcore_dir\GlobalMemoryPool.v" into library work
+Parsing module <GlobalMemoryPool>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\Convolution2D.v" into library work
+Parsing module <Convolution2D>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessor.v" into library work
+Parsing module <NeuralProcessor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <NeuralProcessor>.
+
+Elaborating module <GlobalMemoryPool>.
+WARNING:HDLCompiler:1499 - "D:\Xilinx\NeuralHardware\NeuralHardware\ipcore_dir\GlobalMemoryPool.v" Line 39: Empty module <GlobalMemoryPool> remains a black box.
+WARNING:HDLCompiler:189 - "D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessor.v" Line 26: Size mismatch in connection of port <dinb>. Formal port size is 16-bit while actual signal size is 1-bit.
+
+Elaborating module <Convolution2D>.
+
+Elaborating module <ctrl_conv2D(img_width=48,kernel_size=3)>.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" Line 55: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" Line 57: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" Line 59: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" Line 60: Result of 15-bit expression is truncated to fit in 14-bit target.
+
+Elaborating module <pixelpointprocessor(img_width=48,kernel_size=3)>.
+
+Elaborating module <ctrl(img_width=48,kernel_size=3)>.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 39: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 40: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 41: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 43: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 44: Result of 15-bit expression is truncated to fit in 14-bit target.
+
+Elaborating module <calculator(kernel_size=3)>.
+WARNING:HDLCompiler:91 - "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v" Line 37: Signal <en> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v" Line 38: Signal <counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v" Line 38: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:634 - "D:\Xilinx\NeuralHardware\NeuralHardware\Convolution2D.v" Line 39: Net <en> does not have a driver.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessor.v" Line 27: Assignment to completed ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessor.v" Line 23: Net <base_result_addr[13]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessor.v" Line 26: Net <weB> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessor.v" Line 27: Net <en_conv2d> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <NeuralProcessor>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessor.v".
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\Xilinx\NeuralHardware\NeuralHardware\NeuralProcessor.v" line 27: Output port <completed> of the instance <conv2d_1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <base_result_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <pix_base_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <kernel_base_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <weB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <dinB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <en_conv2d> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <NeuralProcessor> synthesized.
+
+Synthesizing Unit <Convolution2D>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\Convolution2D.v".
+        img_width = 48
+        kernel_size = 3
+WARNING:Xst:653 - Signal <en> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Convolution2D> synthesized.
+
+Synthesizing Unit <ctrl_conv2D>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v".
+        img_width = 48
+        kernel_size = 3
+    Found 1-bit register for signal <completed>.
+    Found 1-bit register for signal <en>.
+    Found 14-bit register for signal <pix_addr>.
+    Found 14-bit register for signal <kernel_addr>.
+    Found 32-bit register for signal <c>.
+    Found 14-bit register for signal <result_addr>.
+    Found 2-bit register for signal <j>.
+    Found 1-bit register for signal <ack>.
+    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_6_OUT> created at line 56.
+    Found 32-bit adder for signal <c[31]_GND_4_o_add_2_OUT> created at line 52.
+    Found 14-bit adder for signal <result_addr[13]_GND_4_o_add_3_OUT> created at line 55.
+    Found 14-bit adder for signal <pix_addr[13]_GND_4_o_add_7_OUT> created at line 57.
+    Found 2-bit adder for signal <j[1]_GND_4_o_add_8_OUT> created at line 59.
+    Found 14-bit adder for signal <pix_addr[13]_GND_4_o_add_9_OUT> created at line 60.
+    Found 6x2-bit multiplier for signal <PWR_4_o_j[1]_MuLt_4_OUT> created at line 56.
+    Found 32-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_7_o> created at line 56
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  79 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <ctrl_conv2D> synthesized.
+
+Synthesizing Unit <pixelpointprocessor>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\pixelpointprocessor.v".
+        img_width = 48
+        kernel_size = 3
+    Summary:
+	no macro.
+Unit <pixelpointprocessor> synthesized.
+
+Synthesizing Unit <ctrl>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v".
+        img_width = 48
+        kernel_size = 3
+    Found 14-bit register for signal <addrB>.
+    Found 14-bit register for signal <addrA>.
+    WARNING:Xst:2404 -  FFs/Latches <i<2:0>> (without init value) have a constant value of 0 in block <ctrl>.
+    WARNING:Xst:2404 -  FFs/Latches <count<4:0>> (without init value) have a constant value of 0 in block <ctrl>.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+Unit <ctrl> synthesized.
+
+Synthesizing Unit <calculator>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v".
+        kernel_size = 3
+    Found 32-bit register for signal <out_pix>.
+    Found 1-bit register for signal <done>.
+    Found 5-bit comparator greater for signal <n0009> created at line 50
+    WARNING:Xst:2404 -  FFs/Latches <temp<31:0>> (without init value) have a constant value of 0 in block <calculator>.
+    WARNING:Xst:2404 -  FFs/Latches <write<0:0>> (without init value) have a constant value of 0 in block <calculator>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <calculator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 6x2-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 14-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 12
+ 1-bit register                                        : 4
+ 14-bit register                                       : 5
+ 2-bit register                                        : 1
+ 32-bit register                                       : 2
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 14-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/GlobalMemoryPool.ngc>.
+Loading core <GlobalMemoryPool> for timing and area information for instance <GlobMemPool1>.
+WARNING:Xst:1710 - FF/Latch <out_pix_9> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_10> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_11> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_12> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_13> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_14> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_15> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <en> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_0> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_1> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_2> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_3> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_4> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_5> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_6> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_7> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_8> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_9> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_10> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_11> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_12> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <kernel_addr_13> (without init value) has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_0> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_1> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_2> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_3> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_4> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_5> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_6> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_7> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_8> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_9> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_10> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_11> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_12> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addrB_13> (without init value) has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_0> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_1> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_2> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_3> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_4> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_5> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_6> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_7> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_pix_8> (without init value) has a constant value of 0 in block <calc1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <out_pix_16> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_17> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_18> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_19> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_20> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_21> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_22> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_23> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_24> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_25> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_26> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_27> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_28> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_29> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_30> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_31> of sequential type is unconnected in block <calc1>.
+
+Synthesizing (advanced) Unit <ctrl_conv2D>.
+The following registers are absorbed into accumulator <pix_addr>: 1 register on signal <pix_addr>.
+The following registers are absorbed into counter <result_addr>: 1 register on signal <result_addr>.
+The following registers are absorbed into counter <c>: 1 register on signal <c>.
+The following registers are absorbed into counter <j>: 1 register on signal <j>.
+	Multiplier <Mmult_PWR_4_o_j[1]_MuLt_4_OUT> in block <ctrl_conv2D> and adder/subtractor <Msub_GND_4_o_GND_4_o_sub_6_OUT> in block <ctrl_conv2D> are combined into a MAC<Maddsub_PWR_4_o_j[1]_MuLt_4_OUT>.
+Unit <ctrl_conv2D> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 1
+ 6x2-to-9-bit MAC                                      : 1
+# Counters                                             : 3
+ 14-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 14-bit up accumulator                                 : 1
+# Registers                                            : 78
+ Flip-Flops                                            : 78
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <out_pix_31> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_30> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_29> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_28> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_27> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_26> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_25> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_24> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_23> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_22> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_21> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_20> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_19> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_18> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_17> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_16> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_15> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_14> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_13> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_12> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_11> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_10> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_9> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_8> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_7> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_6> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_5> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_4> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_3> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_2> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_1> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_pix_0> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <en> has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_0> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_1> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_2> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_3> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_4> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_5> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_6> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_7> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_8> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_9> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_10> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_11> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_12> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <kernel_addr_13> (without init value) has a constant value of 0 in block <ctrl_conv2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <conv2d_1/P1/calc1/done> has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <NeuralProcessor> ...
+
+Optimizing unit <ctrl> ...
+
+Optimizing unit <ctrl_conv2D> ...
+WARNING:Xst:1710 - FF/Latch <conv2d_1/P1/C1/addrB_13> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_12> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_11> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_10> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_9> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_8> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_7> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_6> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_5> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_4> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_3> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_2> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_1> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/P1/C1/addrB_0> (without init value) has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/C2/j_1> has a constant value of 0 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <conv2d_1/C2/j_0> has a constant value of 1 in block <NeuralProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_31> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_30> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_29> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_28> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_27> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_26> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_25> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_24> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_23> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_22> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_21> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_20> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_19> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_18> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_17> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_16> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_15> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_14> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_13> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_12> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_11> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_10> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_9> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_8> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_7> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_6> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_5> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_4> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_3> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_2> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_1> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/c_0> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_13> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_12> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_11> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_10> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_9> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_8> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_7> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_6> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_5> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_4> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_3> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_2> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_1> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/result_addr_0> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/ack> of sequential type is unconnected in block <NeuralProcessor>.
+WARNING:Xst:2677 - Node <conv2d_1/C2/completed> of sequential type is unconnected in block <NeuralProcessor>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block NeuralProcessor, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : NeuralProcessor.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 86
+#      GND                         : 2
+#      INV                         : 1
+#      LUT1                        : 12
+#      LUT2                        : 3
+#      LUT3                        : 11
+#      LUT4                        : 3
+#      LUT5                        : 2
+#      LUT6                        : 18
+#      MUXCY                       : 18
+#      VCC                         : 2
+#      XORCY                       : 14
+# FlipFlops/Latches                : 32
+#      FD                          : 14
+#      FDE                         : 4
+#      FDR                         : 14
+# RAMS                             : 8
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg400-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              32  out of  106400     0%  
+ Number of Slice LUTs:                   50  out of  53200     0%  
+    Number used as Logic:                50  out of  53200     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     68
+   Number with an unused Flip Flop:      36  out of     68    52%  
+   Number with an unused LUT:            18  out of     68    26%  
+   Number of fully used LUT-FF pairs:    14  out of     68    20%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   1  out of    125     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                8  out of    140     5%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    104     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 40    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                         | Buffer(FF name)                                                                                                                                        | Load  |
+---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+GlobMemPool1/N1(GlobMemPool1/XST_GND:G)| NONE(GlobMemPool1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram)| 14    |
+---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.111ns (Maximum Frequency: 473.687MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.111ns (frequency: 473.687MHz)
+  Total number of paths / destination ports: 498 / 44
+-------------------------------------------------------------------------
+Delay:               2.111ns (Levels of Logic = 20)
+  Source:            conv2d_1/C2/pix_addr_3 (FF)
+  Destination:       conv2d_1/C2/pix_addr_13 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: conv2d_1/C2/pix_addr_3 to conv2d_1/C2/pix_addr_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.232   0.470  conv2d_1/C2/pix_addr_3 (conv2d_1/C2/pix_addr_3)
+     LUT4:I0->O            1   0.043   0.000  conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_lut<0> (conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_lut<0>)
+     MUXCY:S->O            1   0.230   0.000  conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<0> (conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<1> (conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<2> (conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<3> (conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<3>)
+     MUXCY:CI->O           1   0.147   0.289  conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<4> (conv2d_1/C2/Mcompar_GND_4_o_GND_4_o_LessThan_7_o_cy<4>)
+     LUT2:I1->O            1   0.043   0.000  conv2d_1/C2/Maccum_pix_addr_lut<1> (conv2d_1/C2/Maccum_pix_addr_lut<1>)
+     MUXCY:S->O            1   0.230   0.000  conv2d_1/C2/Maccum_pix_addr_cy<1> (conv2d_1/C2/Maccum_pix_addr_cy<1>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<2> (conv2d_1/C2/Maccum_pix_addr_cy<2>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<3> (conv2d_1/C2/Maccum_pix_addr_cy<3>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<4> (conv2d_1/C2/Maccum_pix_addr_cy<4>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<5> (conv2d_1/C2/Maccum_pix_addr_cy<5>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<6> (conv2d_1/C2/Maccum_pix_addr_cy<6>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<7> (conv2d_1/C2/Maccum_pix_addr_cy<7>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<8> (conv2d_1/C2/Maccum_pix_addr_cy<8>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<9> (conv2d_1/C2/Maccum_pix_addr_cy<9>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<10> (conv2d_1/C2/Maccum_pix_addr_cy<10>)
+     MUXCY:CI->O           1   0.012   0.000  conv2d_1/C2/Maccum_pix_addr_cy<11> (conv2d_1/C2/Maccum_pix_addr_cy<11>)
+     MUXCY:CI->O           0   0.013   0.000  conv2d_1/C2/Maccum_pix_addr_cy<12> (conv2d_1/C2/Maccum_pix_addr_cy<12>)
+     XORCY:CI->O           1   0.251   0.000  conv2d_1/C2/Maccum_pix_addr_xor<13> (conv2d_1/C2/Result<13>1)
+     FDR:D                    -0.001          conv2d_1/C2/pix_addr_13
+    ----------------------------------------
+    Total                      2.111ns (1.352ns logic, 0.760ns route)
+                                       (64.0% logic, 36.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.111|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.31 secs
+ 
+--> 
+
+Total memory usage is 4707304 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  204 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

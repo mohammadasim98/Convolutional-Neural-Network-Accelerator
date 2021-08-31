@@ -1,0 +1,28 @@
+Command line:
+   Convolution2D_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60367
+
+Thu Jan 21 00:16:47 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5165 Meg
+
+ Total Signals          : 207
+ Total Nets             : 665
+ Total Signal Drivers   : 73
+ Total Blocks           : 24
+ Total Primitive Blocks : 18
+ Total Processes        : 92
+ Total Traceable Variables  : 367
+ Total Scalar Nets and Variables : 346068
+
+ Total Simulation Time: 1.03125 sec
+
+ Current Memory Usage: 4693.14 Meg
+
+Thu Jan 21 00:19:15 2021
+

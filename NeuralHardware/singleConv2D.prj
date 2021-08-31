@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/kernelMem.v"
+verilog work "ipcore_dir/dataMem.v"
+verilog work "control.v"
+verilog work "addmulacc.v"
+verilog work "singleConv2D.v"

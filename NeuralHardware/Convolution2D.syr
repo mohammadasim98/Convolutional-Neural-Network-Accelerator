@@ -1,0 +1,623 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Convolution2D.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Convolution2D.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Convolution2D"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg400
+
+---- Source Options
+Top Module Name                    : Convolution2D
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\ipcore_dir\GlobalMemoryPool.v" into library work
+Parsing module <GlobalMemoryPool>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" into library work
+Parsing module <ctrl>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v" into library work
+Parsing module <calculator>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\pixelpointprocessor.v" into library work
+Parsing module <pixelpointprocessor>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" into library work
+Parsing module <ctrl_conv2D>.
+Analyzing Verilog file "D:\Xilinx\NeuralHardware\NeuralHardware\Convolution2D.v" into library work
+Parsing module <Convolution2D>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Convolution2D>.
+
+Elaborating module <ctrl_conv2D(img_width=48,kernel_size=3)>.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" Line 55: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" Line 57: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" Line 59: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v" Line 60: Result of 15-bit expression is truncated to fit in 14-bit target.
+
+Elaborating module <pixelpointprocessor(img_width=48,kernel_size=3)>.
+
+Elaborating module <ctrl(img_width=48,kernel_size=3)>.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 39: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 40: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 41: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 43: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v" Line 44: Result of 15-bit expression is truncated to fit in 14-bit target.
+
+Elaborating module <GlobalMemoryPool>.
+WARNING:HDLCompiler:1499 - "D:\Xilinx\NeuralHardware\NeuralHardware\ipcore_dir\GlobalMemoryPool.v" Line 39: Empty module <GlobalMemoryPool> remains a black box.
+
+Elaborating module <calculator(kernel_size=3)>.
+WARNING:HDLCompiler:91 - "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v" Line 37: Signal <en> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v" Line 38: Signal <counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v" Line 38: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:634 - "D:\Xilinx\NeuralHardware\NeuralHardware\pixelpointprocessor.v" Line 32: Net <weB> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\Xilinx\NeuralHardware\NeuralHardware\pixelpointprocessor.v" Line 33: Net <dinB[15]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Convolution2D>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\Convolution2D.v".
+        img_width = 48
+        kernel_size = 3
+    Summary:
+	no macro.
+Unit <Convolution2D> synthesized.
+
+Synthesizing Unit <ctrl_conv2D>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl_conv2D.v".
+        img_width = 48
+        kernel_size = 3
+    Found 1-bit register for signal <completed>.
+    Found 1-bit register for signal <en>.
+    Found 14-bit register for signal <pix_addr>.
+    Found 14-bit register for signal <kernel_addr>.
+    Found 32-bit register for signal <c>.
+    Found 14-bit register for signal <result_addr>.
+    Found 2-bit register for signal <j>.
+    Found 1-bit register for signal <ack>.
+    Found 9-bit subtractor for signal <GND_2_o_GND_2_o_sub_6_OUT> created at line 56.
+    Found 32-bit adder for signal <c[31]_GND_2_o_add_2_OUT> created at line 52.
+    Found 14-bit adder for signal <result_addr[13]_GND_2_o_add_3_OUT> created at line 55.
+    Found 14-bit adder for signal <pix_addr[13]_GND_2_o_add_7_OUT> created at line 57.
+    Found 2-bit adder for signal <j[1]_GND_2_o_add_8_OUT> created at line 59.
+    Found 14-bit adder for signal <pix_addr[13]_GND_2_o_add_9_OUT> created at line 60.
+    Found 6x2-bit multiplier for signal <PWR_2_o_j[1]_MuLt_4_OUT> created at line 56.
+    Found 32-bit comparator greater for signal <GND_2_o_GND_2_o_LessThan_7_o> created at line 56
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  79 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <ctrl_conv2D> synthesized.
+
+Synthesizing Unit <pixelpointprocessor>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\pixelpointprocessor.v".
+        img_width = 48
+        kernel_size = 3
+WARNING:Xst:653 - Signal <dinB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <weB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <pixelpointprocessor> synthesized.
+
+Synthesizing Unit <ctrl>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\ctrl.v".
+        img_width = 48
+        kernel_size = 3
+    Found 14-bit register for signal <addrB>.
+    Found 5-bit register for signal <count>.
+    Found 3-bit register for signal <i>.
+    Found 14-bit register for signal <addrA>.
+    Found 14-bit adder for signal <addrA[13]_GND_5_o_add_1_OUT> created at line 39.
+    Found 14-bit adder for signal <addrB[13]_GND_5_o_add_2_OUT> created at line 40.
+    Found 5-bit adder for signal <count[4]_GND_5_o_add_3_OUT> created at line 41.
+    Found 3-bit adder for signal <i[2]_GND_5_o_add_5_OUT> created at line 43.
+    Found 14-bit adder for signal <base_addrA[13]_GND_5_o_add_7_OUT> created at line 44.
+    Found 3x6-bit multiplier for signal <i[2]_PWR_5_o_MuLt_6_OUT> created at line 44.
+    Found 5-bit comparator greater for signal <n0003> created at line 42
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <ctrl> synthesized.
+
+Synthesizing Unit <calculator>.
+    Related source file is "D:\Xilinx\NeuralHardware\NeuralHardware\calculator.v".
+        kernel_size = 3
+    Found 1-bit register for signal <write>.
+    Found 32-bit register for signal <temp>.
+    Found 32-bit register for signal <out_pix>.
+    Found 1-bit register for signal <done>.
+    Found 5-bit adder for signal <counter[4]_GND_8_o_add_0_OUT> created at line 38.
+    Found 32-bit adder for signal <temp[31]_kernel_weights[15]_add_7_OUT> created at line 48.
+    Found 16x16-bit multiplier for signal <n0044> created at line 48.
+    Found 5-bit comparator greater for signal <counter[4]_GND_8_o_LessThan_5_o> created at line 47
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <calculator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 16x16-bit multiplier                                  : 1
+ 6x2-bit multiplier                                    : 1
+ 6x3-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 11
+ 14-bit adder                                          : 4
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 2
+ 5-bit adder                                           : 2
+ 9-bit subtractor                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 5
+ 14-bit register                                       : 5
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 3
+ 5-bit register                                        : 1
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 10
+ 14-bit 2-to-1 multiplexer                             : 8
+ 5-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/GlobalMemoryPool.ngc>.
+Loading core <GlobalMemoryPool> for timing and area information for instance <GlobMemPool1>.
+WARNING:Xst:2677 - Node <out_pix_16> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_17> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_18> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_19> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_20> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_21> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_22> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_23> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_24> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_25> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_26> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_27> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_28> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_29> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_30> of sequential type is unconnected in block <calc1>.
+WARNING:Xst:2677 - Node <out_pix_31> of sequential type is unconnected in block <calc1>.
+
+Synthesizing (advanced) Unit <calculator>.
+The following registers are absorbed into accumulator <temp>: 1 register on signal <temp>.
+	Multiplier <Mmult_n0044> in block <calculator> and accumulator <temp> in block <calculator> are combined into a MAC<Mmac_n0044>.
+Unit <calculator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ctrl>.
+The following registers are absorbed into counter <i>: 1 register on signal <i>.
+The following registers are absorbed into counter <addrB>: 1 register on signal <addrB>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ctrl_conv2D>.
+The following registers are absorbed into accumulator <pix_addr>: 1 register on signal <pix_addr>.
+The following registers are absorbed into counter <result_addr>: 1 register on signal <result_addr>.
+The following registers are absorbed into counter <c>: 1 register on signal <c>.
+The following registers are absorbed into counter <j>: 1 register on signal <j>.
+	Multiplier <Mmult_PWR_2_o_j[1]_MuLt_4_OUT> in block <ctrl_conv2D> and adder/subtractor <Msub_GND_2_o_GND_2_o_sub_6_OUT> in block <ctrl_conv2D> are combined into a MAC<Maddsub_PWR_2_o_j[1]_MuLt_4_OUT>.
+Unit <ctrl_conv2D> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 2
+ 16x16-to-32-bit MAC                                   : 1
+ 6x2-to-9-bit MAC                                      : 1
+# Multipliers                                          : 1
+ 6x3-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 4
+ 14-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 5-bit adder                                           : 2
+# Counters                                             : 6
+ 14-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 14-bit up loadable accumulator                        : 1
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 19
+ 1-bit 2-to-1 multiplexer                              : 14
+ 14-bit 2-to-1 multiplexer                             : 3
+ 5-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit calculator : the following signal(s) form a combinatorial loop: GND_8_o_GND_8_o_equal_16_o, counter[4]_GND_8_o_add_0_OUT<4>, Madd_counter[4]_GND_8_o_add_0_OUT_lut<4>.
+WARNING:Xst:2170 - Unit calculator : the following signal(s) form a combinatorial loop: counter[4]_GND_8_o_add_0_OUT<3>, counter[4]_GND_8_o_LessThan_5_o, Madd_counter[4]_GND_8_o_add_0_OUT_lut<3>, GND_8_o_counter[4]_LessThan_9_o.
+
+Optimizing unit <Convolution2D> ...
+
+Optimizing unit <ctrl_conv2D> ...
+
+Optimizing unit <ctrl> ...
+
+Optimizing unit <calculator> ...
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_31> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_30> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_29> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_28> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_27> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_26> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_25> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_24> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_23> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_22> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_21> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_20> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_19> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_18> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_17> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:2677 - Node <P1/calc1/out_pix_16> of sequential type is unconnected in block <Convolution2D>.
+WARNING:Xst:1293 - FF/Latch <P1/C1/count_4> has a constant value of 0 in block <Convolution2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/C1/count_3> has a constant value of 0 in block <Convolution2D>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/C1/count_2> has a constant value of 0 in block <Convolution2D>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Convolution2D, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 130
+ Flip-Flops                                            : 130
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Convolution2D.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 371
+#      GND                         : 2
+#      INV                         : 6
+#      LUT1                        : 31
+#      LUT2                        : 22
+#      LUT3                        : 70
+#      LUT4                        : 10
+#      LUT5                        : 21
+#      LUT6                        : 32
+#      MUXCY                       : 87
+#      VCC                         : 2
+#      XORCY                       : 88
+# FlipFlops/Latches                : 134
+#      FD                          : 33
+#      FDE                         : 96
+#      FDR                         : 2
+#      FDRE                        : 3
+# RAMS                             : 8
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 44
+#      IBUF                        : 43
+#      OBUF                        : 1
+# DSPs                             : 1
+#      DSP48E1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg400-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             134  out of  106400     0%  
+ Number of Slice LUTs:                  192  out of  53200     0%  
+    Number used as Logic:               192  out of  53200     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    222
+   Number with an unused Flip Flop:      88  out of    222    39%  
+   Number with an unused LUT:            30  out of    222    13%  
+   Number of fully used LUT-FF pairs:   104  out of    222    46%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          45
+ Number of bonded IOBs:                  45  out of    125    36%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                8  out of    140     5%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    104     0%  
+ Number of DSP48E1s:                      1  out of    220     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 143   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                               | Buffer(FF name)                                                                                                                                           | Load  |
+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+P1/GlobMemPool1/N1(P1/GlobMemPool1/XST_GND:G)| NONE(P1/GlobMemPool1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram)| 14    |
+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.864ns (Maximum Frequency: 205.579MHz)
+   Minimum input arrival time before clock: 1.017ns
+   Maximum output required time after clock: 0.511ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.864ns (frequency: 205.579MHz)
+  Total number of paths / destination ports: 4844 / 334
+-------------------------------------------------------------------------
+Delay:               4.864ns (Levels of Logic = 1)
+  Source:            P1/GlobMemPool1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       P1/calc1/Mmac_n0044 (DSP)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: P1/GlobMemPool1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram to P1/calc1/Mmac_n0044
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO0    1   1.846   0.279  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram (douta<0>)
+     end scope: 'P1/GlobMemPool1:douta<0>'
+     DSP48E1:A0                2.739          P1/calc1/Mmac_n0044
+    ----------------------------------------
+    Total                      4.864ns (4.585ns logic, 0.279ns route)
+                                       (94.3% logic, 5.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 267 / 85
+-------------------------------------------------------------------------
+Offset:              1.017ns (Levels of Logic = 16)
+  Source:            base_result_addr<0> (PAD)
+  Destination:       C2/result_addr_13 (FF)
+  Destination Clock: clk rising
+
+  Data Path: base_result_addr<0> to C2/result_addr_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.343  base_result_addr_0_IBUF (base_result_addr_0_IBUF)
+     LUT3:I1->O            1   0.043   0.000  C2/Mcount_result_addr_lut<0> (C2/Mcount_result_addr_lut<0>)
+     MUXCY:S->O            1   0.230   0.000  C2/Mcount_result_addr_cy<0> (C2/Mcount_result_addr_cy<0>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<1> (C2/Mcount_result_addr_cy<1>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<2> (C2/Mcount_result_addr_cy<2>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<3> (C2/Mcount_result_addr_cy<3>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<4> (C2/Mcount_result_addr_cy<4>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<5> (C2/Mcount_result_addr_cy<5>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<6> (C2/Mcount_result_addr_cy<6>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<7> (C2/Mcount_result_addr_cy<7>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<8> (C2/Mcount_result_addr_cy<8>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<9> (C2/Mcount_result_addr_cy<9>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<10> (C2/Mcount_result_addr_cy<10>)
+     MUXCY:CI->O           1   0.012   0.000  C2/Mcount_result_addr_cy<11> (C2/Mcount_result_addr_cy<11>)
+     MUXCY:CI->O           0   0.013   0.000  C2/Mcount_result_addr_cy<12> (C2/Mcount_result_addr_cy<12>)
+     XORCY:CI->O           1   0.251   0.000  C2/Mcount_result_addr_xor<13> (C2/Mcount_result_addr13)
+     FDE:D                    -0.001          C2/result_addr_13
+    ----------------------------------------
+    Total                      1.017ns (0.674ns logic, 0.343ns route)
+                                       (66.3% logic, 33.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.511ns (Levels of Logic = 1)
+  Source:            C2/completed (FF)
+  Destination:       completed (PAD)
+  Source Clock:      clk rising
+
+  Data Path: C2/completed to completed
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.232   0.279  C2/completed (C2/completed)
+     OBUF:I->O                 0.000          completed_OBUF (completed)
+    ----------------------------------------
+    Total                      0.511ns (0.232ns logic, 0.279ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.864|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.32 secs
+ 
+--> 
+
+Total memory usage is 4706728 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   54 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

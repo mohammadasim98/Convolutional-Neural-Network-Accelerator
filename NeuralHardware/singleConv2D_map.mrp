@@ -1,0 +1,1087 @@
+Release 14.5 Map P.58f (nt64)
+Xilinx Mapping Report File for Design 'singleConv2D'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7z020-clg400-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o singleConv2D_map.ncd singleConv2D.ngd singleConv2D.pcf 
+Target Device  : xc7z020
+Target Package : clg400
+Target Speed   : -3
+Mapper Version : zynq -- $Revision: 1.55 $
+Mapped Date    : Tue Jan 19 13:50:21 2021
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   55
+Slice Logic Utilization:
+  Number of Slice Registers:                     0 out of 106,400    0%
+  Number of Slice LUTs:                          0 out of  53,200    0%
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     0 out of  13,300    0%
+  Number of LUT Flip Flop pairs used:            0
+
+IO Utilization:
+  Number of bonded IOBs:                        33 out of     125   26%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     140    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     280    0%
+  Number of BUFG/BUFGCTRLs:                      0 out of      32    0%
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     200    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     200    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     200    0%
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      16    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      16    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      72    0%
+  Number of BUFRs:                               0 out of      16    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     220    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       4    0%
+  Number of IN_FIFOs:                            0 out of      16    0%
+  Number of MMCME2_ADVs:                         0 out of       4    0%
+  Number of OUT_FIFOs:                           0 out of      16    0%
+  Number of PHASER_REFs:                         0 out of       4    0%
+  Number of PHY_CONTROLs:                        0 out of       4    0%
+  Number of PLLE2_ADVs:                          0 out of       4    0%
+  Number of PS7s:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+Peak Memory Usage:  4894 MB
+Total REAL time to MAP completion:  20 secs 
+Total CPU time to MAP completion:   16 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:701 - PAD symbol "clk" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "clk" is not constrained (LOC) to a specific
+   location.
+WARNING:MapLib:701 - Signal base_addrA<3> connected to top level port
+   base_addrA<3> has been removed.
+WARNING:MapLib:701 - Signal base_addrA<2> connected to top level port
+   base_addrA<2> has been removed.
+WARNING:MapLib:701 - Signal base_addrA<1> connected to top level port
+   base_addrA<1> has been removed.
+WARNING:MapLib:701 - Signal base_addrA<0> connected to top level port
+   base_addrA<0> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<12> connected to top level port
+   base_addrB<12> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<11> connected to top level port
+   base_addrB<11> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<10> connected to top level port
+   base_addrB<10> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<9> connected to top level port
+   base_addrB<9> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<8> connected to top level port
+   base_addrB<8> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<7> connected to top level port
+   base_addrB<7> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<6> connected to top level port
+   base_addrB<6> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<5> connected to top level port
+   base_addrB<5> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<4> connected to top level port
+   base_addrB<4> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<3> connected to top level port
+   base_addrB<3> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<2> connected to top level port
+   base_addrB<2> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<1> connected to top level port
+   base_addrB<1> has been removed.
+WARNING:MapLib:701 - Signal base_addrB<0> connected to top level port
+   base_addrB<0> has been removed.
+WARNING:MapLib:701 - Signal en connected to top level port en has been removed.
+WARNING:MapLib:701 - Signal clk connected to top level port clk has been
+   removed.
+WARNING:PhysDesignRules:2500 - This design does not have a PS7 block.
+   Instantiate the PS7 block in order to ensure proper fabric tie-offs and
+   correct operation of the processing_system7.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<0> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<1> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<2> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<3> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<4> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<5> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<6> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<7> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<8> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<9> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<10> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<11> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<12> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<20> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<13> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<21> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB done is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<14> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<22> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<30> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<15> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<23> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<31> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<16> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<24> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<17> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<25> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<18> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<26> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<19> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<27> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<28> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB out_pix<29> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network M1/douta<15> has no load.
+INFO:LIT:395 - The above info message is repeated 31 more times for the
+   following (max. 5 shown):
+   M1/douta<14>,
+   M1/douta<13>,
+   M1/douta<12>,
+   M1/douta<11>,
+   M1/douta<10>
+   To see the details of these info messages, please use the -detail switch.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 177 block(s) removed
+   1 block(s) optimized away
+ 233 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "clk_BUFGP/IBUFG" is sourceless and has been removed.
+ Sourceless block "clk_BUFGP/BUFG" (CKBUF) removed.
+  The signal "clk_BUFGP" is sourceless and has been removed.
+   Sourceless block "C1/addrB_0" (FF) removed.
+    The signal "C1/addrB<0>" is sourceless and has been removed.
+     Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A11" (ROM) removed.
+      The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<0>" is sourceless and has
+been removed.
+       Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<0>" (MUX) removed.
+        The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<0>" is sourceless and has
+been removed.
+         Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<1>" (MUX) removed.
+          The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<1>" is sourceless and has
+been removed.
+           Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<2>" (MUX) removed.
+            The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<2>" is sourceless and has
+been removed.
+             Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<3>" (MUX) removed.
+              The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<3>" is sourceless and has
+been removed.
+               Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<4>" (MUX) removed.
+                The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<4>" is sourceless and has
+been removed.
+                 Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<5>" (MUX) removed.
+                  The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<5>" is sourceless and has
+been removed.
+                   Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<6>" (MUX) removed.
+                    The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<6>" is sourceless and has
+been removed.
+                     Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<7>" (MUX) removed.
+                      The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<7>" is sourceless and has
+been removed.
+                       Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<8>" (MUX) removed.
+                        The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<8>" is sourceless and has
+been removed.
+                         Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<9>" (MUX) removed.
+                          The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<9>" is sourceless and has
+been removed.
+                           Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<10>" (MUX) removed.
+                            The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<10>" is sourceless and has
+been removed.
+                             Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<11>" (MUX) removed.
+                              The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<11>" is sourceless and has
+been removed.
+                               Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT41_cy" (MUX)
+removed.
+                                The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_cy<11>_l1" is sourceless and
+has been removed.
+                                 Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT41_cy1" (MUX)
+removed.
+                                  The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<12>" is sourceless and has
+been removed.
+                                   Sourceless block "C1/addrB_12" (FF) removed.
+                                    The signal "C1/addrB<12>" is sourceless and has been removed.
+                                     Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/sel_pipe_2" (FF) removed.
+                                      The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/sel_pipe<2>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux17" (ROM) removed.
+                                        The signal "K1/douta<0>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux21" (ROM) removed.
+                                        The signal "K1/douta<10>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux31" (ROM) removed.
+                                        The signal "K1/douta<11>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux41" (ROM) removed.
+                                        The signal "K1/douta<12>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux51" (ROM) removed.
+                                        The signal "K1/douta<13>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux61" (ROM) removed.
+                                        The signal "K1/douta<14>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux71" (ROM) removed.
+                                        The signal "K1/douta<15>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux81" (ROM) removed.
+                                        The signal "K1/douta<1>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux91" (ROM) removed.
+                                        The signal "K1/douta<2>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux101" (ROM) removed.
+                                        The signal "K1/douta<3>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux111" (ROM) removed.
+                                        The signal "K1/douta<4>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux121" (ROM) removed.
+                                        The signal "K1/douta<5>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux131" (ROM) removed.
+                                        The signal "K1/douta<6>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux141" (ROM) removed.
+                                        The signal "K1/douta<7>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux151" (ROM) removed.
+                                        The signal "K1/douta<8>" is sourceless and has been removed.
+                                       Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/Mmux_dout_mux161" (ROM) removed.
+                                        The signal "K1/douta<9>" is sourceless and has been removed.
+                                     Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.b
+indec_inst_a/Mmux_ENOUT<6>11" (ROM) removed.
+                                      The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<
+6>" is sourceless and has been removed.
+                                     Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/out31"
+(ROM) removed.
+                                      The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_ena" is sourceless and has been removed.
+                                     Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/out21"
+(ROM) removed.
+                                      The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.ram_ena" is sourceless and has been removed.
+                             Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<11>" (XOR) removed.
+                              The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<11>" is sourceless and has been
+removed.
+                               Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT31" (ROM) removed.
+                                The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<11>" is sourceless and has
+been removed.
+                                 Sourceless block "C1/addrB_11" (FF) removed.
+                                  The signal "C1/addrB<11>" is sourceless and has been removed.
+                                   Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A31" (ROM) removed.
+                                    The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<11>" is sourceless and has
+been removed.
+                                   Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/sel_pipe_1" (FF) removed.
+                                    The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/sel_pipe<1>" is sourceless and has been removed.
+                           Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<10>" (XOR) removed.
+                            The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<10>" is sourceless and has been
+removed.
+                             Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT21" (ROM) removed.
+                              The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<10>" is sourceless and has
+been removed.
+                               Sourceless block "C1/addrB_10" (FF) removed.
+                                The signal "C1/addrB<10>" is sourceless and has been removed.
+                                 Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A21" (ROM) removed.
+                                  The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<10>" is sourceless and has
+been removed.
+                                 Sourceless block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/sel_pipe_0" (FF) removed.
+                                  The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.
+A/sel_pipe<0>" is sourceless and has been removed.
+                         Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<9>" (XOR) removed.
+                          The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<9>" is sourceless and has been
+removed.
+                           Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT131" (ROM) removed.
+                            The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<9>" is sourceless and has
+been removed.
+                             Sourceless block "C1/addrB_9" (FF) removed.
+                              The signal "C1/addrB<9>" is sourceless and has been removed.
+                               Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A121" (ROM) removed.
+                                The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<9>" is sourceless and has
+been removed.
+                       Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<8>" (XOR) removed.
+                        The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<8>" is sourceless and has been
+removed.
+                         Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT121" (ROM) removed.
+                          The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<8>" is sourceless and has
+been removed.
+                           Sourceless block "C1/addrB_8" (FF) removed.
+                            The signal "C1/addrB<8>" is sourceless and has been removed.
+                             Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A111" (ROM) removed.
+                              The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<8>" is sourceless and has
+been removed.
+                     Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<7>" (XOR) removed.
+                      The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<7>" is sourceless and has been
+removed.
+                       Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT111" (ROM) removed.
+                        The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<7>" is sourceless and has
+been removed.
+                         Sourceless block "C1/addrB_7" (FF) removed.
+                          The signal "C1/addrB<7>" is sourceless and has been removed.
+                           Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A101" (ROM) removed.
+                            The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<7>" is sourceless and has
+been removed.
+                           Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<7>" (ROM) removed.
+                            The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<7>" is sourceless and has
+been removed.
+                   Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<6>" (XOR) removed.
+                    The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<6>" is sourceless and has been
+removed.
+                     Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT101" (ROM) removed.
+                      The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<6>" is sourceless and has
+been removed.
+                       Sourceless block "C1/addrB_6" (FF) removed.
+                        The signal "C1/addrB<6>" is sourceless and has been removed.
+                         Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A91" (ROM) removed.
+                          The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<6>" is sourceless and has
+been removed.
+                         Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<6>" (ROM) removed.
+                          The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<6>" is sourceless and has
+been removed.
+                 Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<5>" (XOR) removed.
+                  The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<5>" is sourceless and has been
+removed.
+                   Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT91" (ROM) removed.
+                    The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<5>" is sourceless and has
+been removed.
+                     Sourceless block "C1/addrB_5" (FF) removed.
+                      The signal "C1/addrB<5>" is sourceless and has been removed.
+                       Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A81" (ROM) removed.
+                        The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<5>" is sourceless and has
+been removed.
+                       Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<5>" (ROM) removed.
+                        The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<5>" is sourceless and has
+been removed.
+               Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<4>" (XOR) removed.
+                The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<4>" is sourceless and has been
+removed.
+                 Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT81" (ROM) removed.
+                  The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<4>" is sourceless and has
+been removed.
+                   Sourceless block "C1/addrB_4" (FF) removed.
+                    The signal "C1/addrB<4>" is sourceless and has been removed.
+                     Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A71" (ROM) removed.
+                      The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<4>" is sourceless and has
+been removed.
+                     Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<4>" (ROM) removed.
+                      The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<4>" is sourceless and has
+been removed.
+             Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<3>" (XOR) removed.
+              The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<3>" is sourceless and has been
+removed.
+               Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT71" (ROM) removed.
+                The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<3>" is sourceless and has
+been removed.
+                 Sourceless block "C1/addrB_3" (FF) removed.
+                  The signal "C1/addrB<3>" is sourceless and has been removed.
+                   Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A61" (ROM) removed.
+                    The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<3>" is sourceless and has
+been removed.
+           Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<2>" (XOR) removed.
+            The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<2>" is sourceless and has been
+removed.
+             Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT61" (ROM) removed.
+              The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<2>" is sourceless and has
+been removed.
+               Sourceless block "C1/addrB_2" (FF) removed.
+                The signal "C1/addrB<2>" is sourceless and has been removed.
+                 Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A51" (ROM) removed.
+                  The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<2>" is sourceless and has
+been removed.
+         Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<1>" (XOR) removed.
+          The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<1>" is sourceless and has been
+removed.
+           Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT51" (ROM) removed.
+            The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<1>" is sourceless and has
+been removed.
+             Sourceless block "C1/addrB_1" (FF) removed.
+              The signal "C1/addrB<1>" is sourceless and has been removed.
+               Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_A41" (ROM) removed.
+                The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_A<1>" is sourceless and has
+been removed.
+     Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<0>" (ROM) removed.
+      The signal "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_lut<0>" is sourceless and has
+been removed.
+       Sourceless block "C1/Mmux_BUS_0004_BUS_0001_mux_8_OUT_rs_xor<0>" (XOR) removed.
+        The signal "C1/BUS_0004_BUS_0001_mux_8_OUT<0>" is sourceless and has been
+removed.
+         Sourceless block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT14" (ROM) removed.
+          The signal "C1/addrB[12]_base_addrB[12]_mux_17_OUT<0>" is sourceless and has
+been removed.
+   Sourceless block "C1/addrA_0" (FF) removed.
+    The signal "C1/addrA<0>" is sourceless and has been removed.
+     Sourceless block "C1/Mmux_addrA[3]_base_addrA[3]_mux_16_OUT21" (ROM) removed.
+      The signal "C1/addrA[3]_base_addrA[3]_mux_16_OUT<1>" is sourceless and has been
+removed.
+       Sourceless block "C1/addrA_1" (FF) removed.
+        The signal "C1/addrA<1>" is sourceless and has been removed.
+         Sourceless block "C1/Mmux_addrA[3]_base_addrA[3]_mux_16_OUT31" (ROM) removed.
+          The signal "C1/addrA[3]_base_addrA[3]_mux_16_OUT<2>" is sourceless and has been
+removed.
+           Sourceless block "C1/addrA_2" (FF) removed.
+            The signal "C1/addrA<2>" is sourceless and has been removed.
+             Sourceless block "C1/Mmux_addrA[3]_base_addrA[3]_mux_16_OUT41" (ROM) removed.
+              The signal "C1/addrA[3]_base_addrA[3]_mux_16_OUT<3>" is sourceless and has been
+removed.
+               Sourceless block "C1/addrA_3" (FF) removed.
+                The signal "C1/addrA<3>" is sourceless and has been removed.
+     Sourceless block "C1/Mmux_addrA[3]_base_addrA[3]_mux_16_OUT11" (ROM) removed.
+      The signal "C1/addrA[3]_base_addrA[3]_mux_16_OUT<0>" is sourceless and has been
+removed.
+   Sourceless block "C1/i_0" (SFF) removed.
+    The signal "C1/i<0>" is sourceless and has been removed.
+     Sourceless block "C1/Mmult_BUS_0003_PWR_2_o_MuLt_6_OUT1_Madd1_cy<3>" (MUX)
+removed.
+      The signal "C1/Mmult_BUS_0003_PWR_2_o_MuLt_6_OUT1_Madd1_cy<3>" is sourceless and
+has been removed.
+       Sourceless block "C1/Mmult_BUS_0003_PWR_2_o_MuLt_6_OUT1_Madd1_cy<4>" (MUX)
+removed.
+        The signal "C1/Mmult_BUS_0003_PWR_2_o_MuLt_6_OUT1_Madd1_cy<4>" is sourceless and
+has been removed.
+       Sourceless block "C1/Mmult_BUS_0003_PWR_2_o_MuLt_6_OUT1_Madd1_xor<4>" (XOR)
+removed.
+        The signal "C1/BUS_0003_PWR_2_o_MuLt_6_OUT<6>" is sourceless and has been
+removed.
+     Sourceless block "C1/Mmult_BUS_0003_PWR_2_o_MuLt_6_OUT1_Madd1_cy<4>_rt" (ROM)
+removed.
+      The signal "C1/Mmult_BUS_0003_PWR_2_o_MuLt_6_OUT1_Madd1_cy<4>_rt" is sourceless
+and has been removed.
+     Sourceless block "C1/n0051<0>1_INV_0" (BUF) removed.
+      The signal "C1/n0051<0>" is sourceless and has been removed.
+   Sourceless block "C1/count_0" (SFF) removed.
+    The signal "C1/count<0>" is sourceless and has been removed.
+     Sourceless block "C1/Madd_n0055_xor<1>11" (ROM) removed.
+      The signal "C1/n0055<1>" is sourceless and has been removed.
+       Sourceless block "C1/count_1" (SFF) removed.
+        The signal "C1/count<1>" is sourceless and has been removed.
+         Sourceless block "C1/Reset_OR_DriverANDClockEnable1" (ROM) removed.
+          The signal "C1/Reset_OR_DriverANDClockEnable" is sourceless and has been
+removed.
+         Sourceless block "C1/_n0084_inv1" (ROM) removed.
+          The signal "C1/_n0084_inv" is sourceless and has been removed.
+     Sourceless block "C1/Madd_n0055_xor<0>11_INV_0" (BUF) removed.
+      The signal "C1/n0055<0>" is sourceless and has been removed.
+   Sourceless block "ama1/ind" (SFF) removed.
+    The signal "ama1/ind" is sourceless and has been removed.
+     Sourceless block "C1/Reset_OR_DriverANDClockEnable21" (ROM) removed.
+      The signal "C1/Reset_OR_DriverANDClockEnable2" is sourceless and has been
+removed.
+     Sourceless block "C1/_n0077_inv1" (ROM) removed.
+      The signal "C1/_n0077_inv" is sourceless and has been removed.
+   Sourceless block "ama1/counter_0" (SFF) removed.
+    The signal "ama1/counter<0>" is sourceless and has been removed.
+     Sourceless block "ama1/Madd_n0035_xor<2>11" (ROM) removed.
+      The signal "ama1/n0035<2>" is sourceless and has been removed.
+       Sourceless block "ama1/counter_2" (SFF) removed.
+        The signal "ama1/counter<2>" is sourceless and has been removed.
+         Sourceless block "ama1/_n00421" (ROM) removed.
+          The signal "ama1/_n0042" is sourceless and has been removed.
+           Sourceless block "ama1/counter_1" (SFF) removed.
+            The signal "ama1/counter<1>" is sourceless and has been removed.
+             Sourceless block "ama1/Madd_n0035_cy<2>11" (ROM) removed.
+              The signal "ama1/Madd_n0035_cy<2>" is sourceless and has been removed.
+               Sourceless block "ama1/counter_3" (SFF) removed.
+                The signal "ama1/counter<3>" is sourceless and has been removed.
+                 Sourceless block "ama1/counter[3]_PWR_5_o_LessThan_3_o1" (ROM) removed.
+                  The signal "ama1/counter[3]_PWR_5_o_LessThan_3_o" is sourceless and has been
+removed.
+             Sourceless block "ama1/Madd_n0035_xor<1>11" (ROM) removed.
+              The signal "ama1/n0035<1>" is sourceless and has been removed.
+     Sourceless block "ama1/Madd_n0035_xor<0>11_INV_0" (BUF) removed.
+      The signal "ama1/n0035<0>" is sourceless and has been removed.
+The signal "M1/douta<15>" is sourceless and has been removed.
+The signal "M1/douta<14>" is sourceless and has been removed.
+The signal "M1/douta<13>" is sourceless and has been removed.
+The signal "M1/douta<12>" is sourceless and has been removed.
+The signal "M1/douta<11>" is sourceless and has been removed.
+The signal "M1/douta<10>" is sourceless and has been removed.
+The signal "M1/douta<9>" is sourceless and has been removed.
+The signal "M1/douta<8>" is sourceless and has been removed.
+The signal "M1/douta<7>" is sourceless and has been removed.
+The signal "M1/douta<6>" is sourceless and has been removed.
+The signal "M1/douta<5>" is sourceless and has been removed.
+The signal "M1/douta<4>" is sourceless and has been removed.
+The signal "M1/douta<3>" is sourceless and has been removed.
+The signal "M1/douta<2>" is sourceless and has been removed.
+The signal "M1/douta<1>" is sourceless and has been removed.
+The signal "M1/douta<0>" is sourceless and has been removed.
+The signal "M1/N0" is sourceless and has been removed.
+The signal "M1/N1" is sourceless and has been removed.
+The signal "K1/N1" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<10>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4]
+.ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<11>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4]
+.ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.ram_douta<4>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<12>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6]
+.ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.ram_douta<5>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<13>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6]
+.ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.ram_douta<6>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<14>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6]
+.ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.ram_douta<7>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<15>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6]
+.ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_douta<4>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<4>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3]
+.ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_douta<5>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<5>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3]
+.ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_douta<6>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<6>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3]
+.ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.ram_douta<7>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<7>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3]
+.ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<8>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4]
+.ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.ram_douta<9>" is sourceless and has been removed.
+The signal
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4]
+.ram.ram_douta<1>" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "base_addrA_3_IBUF" is unused and has been removed.
+ Unused block "base_addrA_3_IBUF" (BUF) removed.
+  The signal "base_addrA<3>" is unused and has been removed.
+   Unused block "base_addrA<3>" (PAD) removed.
+The signal "base_addrA_2_IBUF" is unused and has been removed.
+ Unused block "base_addrA_2_IBUF" (BUF) removed.
+  The signal "base_addrA<2>" is unused and has been removed.
+   Unused block "base_addrA<2>" (PAD) removed.
+The signal "base_addrA_1_IBUF" is unused and has been removed.
+ Unused block "base_addrA_1_IBUF" (BUF) removed.
+  The signal "base_addrA<1>" is unused and has been removed.
+   Unused block "base_addrA<1>" (PAD) removed.
+The signal "base_addrA_0_IBUF" is unused and has been removed.
+ Unused block "base_addrA_0_IBUF" (BUF) removed.
+  The signal "base_addrA<0>" is unused and has been removed.
+   Unused block "base_addrA<0>" (PAD) removed.
+The signal "base_addrB_12_IBUF" is unused and has been removed.
+ Unused block "base_addrB_12_IBUF" (BUF) removed.
+  The signal "base_addrB<12>" is unused and has been removed.
+   Unused block "base_addrB<12>" (PAD) removed.
+The signal "base_addrB_11_IBUF" is unused and has been removed.
+ Unused block "base_addrB_11_IBUF" (BUF) removed.
+  The signal "base_addrB<11>" is unused and has been removed.
+   Unused block "base_addrB<11>" (PAD) removed.
+The signal "base_addrB_10_IBUF" is unused and has been removed.
+ Unused block "base_addrB_10_IBUF" (BUF) removed.
+  The signal "base_addrB<10>" is unused and has been removed.
+   Unused block "base_addrB<10>" (PAD) removed.
+The signal "base_addrB_9_IBUF" is unused and has been removed.
+ Unused block "base_addrB_9_IBUF" (BUF) removed.
+  The signal "base_addrB<9>" is unused and has been removed.
+   Unused block "base_addrB<9>" (PAD) removed.
+The signal "base_addrB_8_IBUF" is unused and has been removed.
+ Unused block "base_addrB_8_IBUF" (BUF) removed.
+  The signal "base_addrB<8>" is unused and has been removed.
+   Unused block "base_addrB<8>" (PAD) removed.
+The signal "base_addrB_7_IBUF" is unused and has been removed.
+ Unused block "base_addrB_7_IBUF" (BUF) removed.
+  The signal "base_addrB<7>" is unused and has been removed.
+   Unused block "base_addrB<7>" (PAD) removed.
+The signal "base_addrB_6_IBUF" is unused and has been removed.
+ Unused block "base_addrB_6_IBUF" (BUF) removed.
+  The signal "base_addrB<6>" is unused and has been removed.
+   Unused block "base_addrB<6>" (PAD) removed.
+The signal "base_addrB_5_IBUF" is unused and has been removed.
+ Unused block "base_addrB_5_IBUF" (BUF) removed.
+  The signal "base_addrB<5>" is unused and has been removed.
+   Unused block "base_addrB<5>" (PAD) removed.
+The signal "base_addrB_4_IBUF" is unused and has been removed.
+ Unused block "base_addrB_4_IBUF" (BUF) removed.
+  The signal "base_addrB<4>" is unused and has been removed.
+   Unused block "base_addrB<4>" (PAD) removed.
+The signal "base_addrB_3_IBUF" is unused and has been removed.
+ Unused block "base_addrB_3_IBUF" (BUF) removed.
+  The signal "base_addrB<3>" is unused and has been removed.
+   Unused block "base_addrB<3>" (PAD) removed.
+The signal "base_addrB_2_IBUF" is unused and has been removed.
+ Unused block "base_addrB_2_IBUF" (BUF) removed.
+  The signal "base_addrB<2>" is unused and has been removed.
+   Unused block "base_addrB<2>" (PAD) removed.
+The signal "base_addrB_1_IBUF" is unused and has been removed.
+ Unused block "base_addrB_1_IBUF" (BUF) removed.
+  The signal "base_addrB<1>" is unused and has been removed.
+   Unused block "base_addrB<1>" (PAD) removed.
+The signal "base_addrB_0_IBUF" is unused and has been removed.
+ Unused block "base_addrB_0_IBUF" (BUF) removed.
+  The signal "base_addrB<0>" is unused and has been removed.
+   Unused block "base_addrB<0>" (PAD) removed.
+The signal "en_IBUF" is unused and has been removed.
+ Unused block "en_IBUF" (BUF) removed.
+  The signal "en" is unused and has been removed.
+   Unused block "en" (PAD) removed.
+The signal "rst" is unused and has been removed.
+ Unused block "rst1_INV_0" (BUF) removed.
+The signal "ama1/stop_inv" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+The signal "clk" is unused and has been removed.
+ Unused block "clk" (PAD) removed.
+The signal "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT41_lut" is unused and has
+been removed.
+ Unused block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT41_lut" (ROM) removed.
+The signal "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT41_cy_rt" is unused and
+has been removed.
+ Unused block "C1/Mmux_addrB[12]_base_addrB[12]_mux_17_OUT41_cy_rt" (ROM)
+removed.
+Unused block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram" (RAMB18E1) removed.
+Unused block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1]
+.ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram" (RAMB18E1) removed.
+Unused block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2]
+.ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram" (RAMB18E1) removed.
+Unused block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3]
+.ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram" (RAMB18E1) removed.
+Unused block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4]
+.ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram" (RAMB18E1) removed.
+Unused block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5]
+.ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram" (RAMB18E1) removed.
+Unused block
+"K1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6]
+.ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram" (RAMB18E1) removed.
+Unused block "K1/XST_GND" (ZERO) removed.
+Unused block
+"M1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram" (RAMB18E1) removed.
+Unused block "M1/XST_GND" (ZERO) removed.
+Unused block "M1/XST_VCC" (ONE) removed.
+Unused block "clk_BUFGP/IBUFG" (CKBUF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| done                               | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<0>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<1>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<2>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<3>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<4>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<5>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<6>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<7>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<8>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<9>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<10>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<11>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<12>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<13>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<14>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<15>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<16>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<17>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<18>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<19>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<20>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<21>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<22>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<23>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<24>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<25>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<26>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<27>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<28>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<29>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<30>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| out_pix<31>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
